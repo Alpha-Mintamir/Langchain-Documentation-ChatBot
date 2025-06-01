@@ -9,8 +9,8 @@ cleaned_text = raw_text.replace('\n', ' ').strip()
 
 # Step 2: Split the cleaned text into chunks
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,     # number of characters per chunk
-    chunk_overlap=50,   # overlap between chunks
+    chunk_size=800,     # number of characters per chunk
+    chunk_overlap=100,   # overlap between chunks
     separators=["\n\n", "\n", ".", " ", ""]
 )
 
